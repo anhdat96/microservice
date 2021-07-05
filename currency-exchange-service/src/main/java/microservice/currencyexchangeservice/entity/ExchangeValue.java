@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "exchange_value")
+@Table(name = "exchange_service")
 public class ExchangeValue {
 
     @Id
@@ -18,10 +18,10 @@ public class ExchangeValue {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "exchange_from")
+    @Column(name = "currency_from")
     private String exchangeFrom;
 
-    @Column(name = "exchange_to")
+    @Column(name = "currency_to")
     private String exchangeTo;
 
     @Column(name = "conversion_multiple")
