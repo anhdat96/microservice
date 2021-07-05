@@ -1,7 +1,8 @@
-package microservice.entity;
+package microservice.currencyconversionservice.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "currency_conversion")
 public class CurrencyConversionService {
     @Id
@@ -30,7 +32,7 @@ public class CurrencyConversionService {
     private BigDecimal totalCalculatedAmount;
 
     @Column(name = "quantity")
-    private String quantity ;
+    private BigDecimal quantity ;
 
     @Column(name = "port")
     private int port ;
