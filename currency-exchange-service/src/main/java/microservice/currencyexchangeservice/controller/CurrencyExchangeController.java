@@ -23,7 +23,7 @@ public class CurrencyExchangeController {
     public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to
                                                ){
         List<ExchangeValue> ex2 = exchangeServiceRepository.findByExchangeFromAndExchangeTo(from,to);
-        return ex2.get(0);
+        return ex2.get(1);
     }
 
 
