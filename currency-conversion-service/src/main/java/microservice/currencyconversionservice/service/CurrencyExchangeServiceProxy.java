@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //@FeignClient(name= "currency-exchange-service",url = "localhost:8000")
 // when we want to talk to multiple instance of currency-exchange-service we do not need the URI
-//@FeignClient(name= "currency-exchange-service")
+
 //@RibbonClient(name = "currency-exchange-service")
-@FeignClient(name= "netflix-zulu-gateway-server",url = "localhost:8765")
+//@FeignClient(name= "netflix-zulu-gateway-server",url = "localhost:8765")
+@FeignClient(name= "currency-exchange-service")
 public interface CurrencyExchangeServiceProxy {
 
 //    @GetMapping("/currency-exchange/from/{from}/to/{to}")
