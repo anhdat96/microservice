@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="currency-conversion-service" />
+        <module name="testing" />
         <module name="netflix-zulu-gateway-server" />
         <module name="currency-exchange-service" />
         <module name="spring-cloud-config-server" />
@@ -22,6 +23,7 @@
       <module name="netflix-erueka" target="1.8" />
       <module name="netflix-zulu-gateway-server" target="1.8" />
       <module name="spring-cloud-config-server" target="1.8" />
+      <module name="testing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -32,6 +34,7 @@
       <module name="netflix-erueka" options="-parameters" />
       <module name="netflix-zulu-gateway-server" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
+      <module name="testing" options="-parameters" />
     </option>
   </component>
 </project>

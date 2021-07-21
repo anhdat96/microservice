@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/netflix-eureka/netflix-erueka.iml" filepath="$PROJECT_DIR$/netflix-eureka/netflix-erueka.iml" />
       <module fileurl="file://$PROJECT_DIR$/netflix-zulu-gateway-server/netflix-zulu-gateway-server.iml" filepath="$PROJECT_DIR$/netflix-zulu-gateway-server/netflix-zulu-gateway-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-config-server/spring-cloud-config-server.iml" filepath="$PROJECT_DIR$/spring-cloud-config-server/spring-cloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing/testing.iml" filepath="$PROJECT_DIR$/testing/testing.iml" />
     </modules>
   </component>
 </project>
