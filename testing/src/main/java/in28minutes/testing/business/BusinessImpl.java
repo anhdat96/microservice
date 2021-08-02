@@ -1,7 +1,10 @@
 package in28minutes.testing.business;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class BusinessImpl {
 
+    @Autowired
     private SomeDataService someDataService;
 
     public void setSomeDataService(SomeDataService someDataService) {
