@@ -7,6 +7,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -38,5 +39,16 @@ public class HelloControllerUnitTest {
         // verify hello-world
         assertEquals("hello-world",result.getResponse().getContentAsString());
 
+    }
+    // example for the post method
+
+    @Test
+    public void testForPostMethod() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/post-item")
+                .accept(MediaType.APPLICATION_JSON)
+                .content("[{id:1 , value:9}]")
+                .contentType(MediaType.APPLICATION_JSON);
+
+        MvcResult mvcResult = mockMvc.perform(requestBuilder).andExpect(status().isOk()).andReturn();
     }
 }

@@ -1,25 +1,25 @@
 package in28minutes.testing.model;
+//
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
+//import javax.persistence.Table;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "item")
+//@Entity
+//@Table(name = "item")
 public class Item {
 
-    @Id
-    @Column(name = "id")
+//    @Id
+//    @Column(name = "id")
     private long id;
 
-    @Column(name = "name")
+//    @Column(name = "name")
     private String name;
 
-    @Column(name="price")
+//    @Column(name="price")
     private int price;
 
-    @Column(name="quantity")
+//    @Column(name="quantity")
     private int quantity;
 
     public Item(long id, String name, int price, int quantity) {
